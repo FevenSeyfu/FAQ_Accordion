@@ -2,33 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/favicon-32x32.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ Accordion</title>
   </head>
   <body>
-    <div id="container" class="bg-light-pink h-screen w-full">
-      <div id="banner" class="bg-[url('./assets/images/background-pattern-mobile.svg')] h-32"></div>
-      <div id="faq_container">
-        <div>
-          <span id="icon"></span>
-          <h1>FAQs</h1>
+    <div
+      id="container"
+      class="bg-light-pink h-screen w-full flex justify-center"
+    >
+      <div
+        id="banner"
+        class="bg-[url('./assets/images/background-pattern-mobile.svg')] w-full h-40 bg-cover bg-no-repeat bg-left-bottom"
+      ></div>
+      <div
+        id="faq_container"
+        class="bg-white w-4/5 rounded-md p-6 absolute top-24"
+      >
+        <div class="flex items-center mb-3">
+          <img src="./assets/images/icon-star.svg" alt="star Icon" class="h-6"
+          />
+          <h1 class="font-extrabold text-3xl mx-4">FAQs</h1>
         </div>
         <div>
-          <div>
-            <h3>what is Frontend Mentor, and how wil it help me?</h3>
-            <button id="plus-minus-icon">
-              <img src="./assets/images/icon-minus.svg" alt="">
+          <div class="flex items-center mb-4">
+            <h3 class="font-bold text-md">What is Frontend Mentor, and how will it help me?</h3>
+            <button id="plus-minus-icon" class="ml-4">
+              <img src="./assets/images/icon-minus.svg" alt="Faq toggle icon" class="h-12"/>
             </button>
           </div>
-          <p>
+          <p class="text-[16px] text-grayish-purple my-4">
             Frontend Mentor offers realistic coding challenges to help
             developers improve their frontend coding skills with projects in
             HTML, CSS, and JavaScript. It's suitable for all levels and ideal
             for portfolio building.
           </p>
+          <hr />
         </div>
-        <hr />
       </div>
     </div>
     <script type="module" src="/main.js"></script>
