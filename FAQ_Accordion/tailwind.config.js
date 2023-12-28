@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:
+      {
+        'white': 'hsl(0, 0%, 100%)',
+        'light-pink': 'hsl(275, 100%, 97%)',
+        'Grayish-purple': 'hsl(292, 16%, 49%)',
+        'dark-purple': 'hsl(292, 42%, 14%)',
+      },
+    },
   },
   plugins: [],
 }
