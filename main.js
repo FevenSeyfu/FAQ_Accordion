@@ -7,8 +7,8 @@ const HandleToggleIcon = (toggleIcon) => {
     let initilaIcon = toggleIcon.src ;
     let testIcon = initilaIcon.includes('icon-plus.svg')
     let newImg = {
-        'true': "./assets/images/icon-minus.svg",
-        'false':"./assets/images/icon-plus.svg"
+        'true': "./src/assets/images/icon-minus.svg",
+        'false':"./src/assets/images/icon-plus.svg"
     }[testIcon];
     return newImg;
 }
