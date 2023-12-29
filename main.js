@@ -2,16 +2,19 @@ const FaqContainer = document.getElementById('faq')
 const toggleButtons= document.querySelectorAll('#plus-minus-icon')
 
 FaqContainer.focus()
-console.log(FaqContainer)
-const HandleToggleIcon = (toggleIcon) => {
-    let initilaIcon = toggleIcon.src ;
-    let testIcon = initilaIcon.includes('icon-plus.svg')
-    let newImg = {
-        'true': "./src/assets/images/icon-minus.svg",
-        'false':"./src/assets/images/icon-plus.svg"
-    }[testIcon];
+const getIconPath = (imageName) => {
+    const scriptTag = document.querySelector('script[src*="main.js"]');
+    const scriptPath = scriptTag.src;
+    const basePath = scriptPath.substring(0, scriptPath.lastIndexOf('/'));
+    return `${basePath}/assets/images/${imageName}`;
+  };
+  
+  const handleToggleIcon = (toggleIcon) => {
+    const initialIcon = toggleIcon.src;
+    const testIcon = initialIcon.includes('icon-plus.svg');
+    const newImg = getIconPath(testIcon ? 'icon-minus.svg' : 'icon-plus.svg');
     return newImg;
-}
+  };
 toggleButtons.forEach(toggleButton => {
     toggleButton.addEventListener('click',(e)=>{
         const faq=toggleButton.parentNode.parentElement;
