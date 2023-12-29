@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  purge: ['./public/**/*.html'],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,tsx}",
+  ],
   theme: {
     extend: {
       colors:
