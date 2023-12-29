@@ -10,18 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ Accordion</title>
   </head>
-  <body class="flex flex-col min-h-screen w-full  bg-light-pink">
-    <div
-      id="container"
-      class="flex flex-col items-center"
-    >
+  <body class="flex flex-col min-h-screen w-full bg-light-pink">
+    <div id="container" class="flex flex-col items-center">
       <div
         id="banner"
         class="bg-[url('./assets/images/background-pattern-mobile.svg')] w-full h-40 bg-cover bg-no-repeat bg-left-bottom"
       ></div>
       <div
         id="faq_container"
-        class="bg-white w-[18rem] md:w-[38rem] rounded-md p-6 md:p-12 absolute top-24 mb-12"
+        class="bg-white w-[18rem] md:w-[38rem] rounded-md shadow-lg p-6 md:p-12 absolute top-24 mb-12"
       >
         <div class="flex items-center mb-3">
           <img
@@ -32,15 +29,12 @@
           <h1 class="font-extrabold text-3xl mx-4">FAQs</h1>
         </div>
         <div id="faq" class="my-2">
-          <div class="flex  items-center mb-4">
-            <h3 class="font-bold text-md  w-11/12">
+          <div class="flex items-center mb-4">
+            <h3 class="font-bold text-md w-11/12">
               What is Frontend Mentor, and how will it help me?
             </h3>
-            <button id="plus-minus-icon"  >
-              <img
-                src="./assets/images/icon-minus.svg"
-                alt="Faq toggle icon"
-              />
+            <button id="plus-minus-icon">
+              <img src="./assets/images/icon-minus.svg" alt="Faq toggle icon" />
             </button>
           </div>
           <p class="text-[16px] text-grayish-purple my-4">
@@ -53,13 +47,10 @@
         </div>
         <!-- 2nd -->
         <div id="faq" class="my-2">
-          <div class="flex  items-center mb-4">
-            <h3 class="font-bold text-md  w-11/12">Is Frontend Mentor free?</h3>
-            <button id="plus-minus-icon"   >
-              <img
-                src="./assets/images/icon-plus.svg"
-                alt="Faq toggle icon"
-              />
+          <div class="flex items-center mb-4">
+            <h3 class="font-bold text-md w-11/12">Is Frontend Mentor free?</h3>
+            <button id="plus-minus-icon">
+              <img src="./assets/images/icon-plus.svg" alt="Faq toggle icon" />
             </button>
           </div>
           <p class="text-[16px] text-grayish-purple my-4 hidden">
@@ -71,15 +62,12 @@
         </div>
         <!-- 3rd -->
         <div id="faq" class="my-2">
-          <div class="flex  items-center mb-4">
-            <h3 class="font-bold text-md  w-11/12">
+          <div class="flex items-center mb-4">
+            <h3 class="font-bold text-md w-11/12">
               Can I use Frontend Mentor projects in my portfolio?
             </h3>
-            <button id="plus-minus-icon" >
-              <img
-                src="./assets/images/icon-plus.svg"
-                alt="Faq toggle icon"
-              />
+            <button id="plus-minus-icon">
+              <img src="./assets/images/icon-plus.svg" alt="Faq toggle icon" />
             </button>
           </div>
           <p class="text-[16px] text-grayish-purple my-4 hidden">
@@ -91,15 +79,12 @@
         </div>
         <!-- 4th -->
         <div id="faq" class="my-2">
-          <div class="flex  items-center mb-4">
-            <h3 class="font-bold text-md  w-11/12">
+          <div class="flex items-center mb-4">
+            <h3 class="font-bold text-md w-11/12">
               How can I get help if I'm stuck on a Frontend Mentor challenge?
             </h3>
-            <button id="plus-minus-icon"  >
-              <img
-                src="./assets/images/icon-plus.svg"
-                alt="Faq toggle icon"
-              />
+            <button id="plus-minus-icon">
+              <img src="./assets/images/icon-plus.svg" alt="Faq toggle icon" />
             </button>
           </div>
           <p class="text-[16px] text-grayish-purple my-4 hidden">
@@ -109,10 +94,22 @@
           </p>
         </div>
       </div>
+      <div id="footer" class="fixed bottom-0 w-full text-gray text-center">
+        <p>
+          Challenge by
+          <a
+            class="hover:underline hover:text-grayish-purple"
+            href="https://www.frontendmentor.io/?ref=challenge"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            class="hover:underline hover:text-grayish-purple"
+            href="https://github.com/FevenSeyfu"
+            >Feven Seyfu</a
+          >.
+        </p>
+      </div>
     </div>
-    <div id="footer" class="fixed bottom-0 w-full text-gray p-4 text-center">
-      <p>Challenge by <a class="hover:underline hover:text-grayish-purple" href="https://www.frontendmentor.io/?ref=challenge">Frontend Mentor</a>. Coded by <a class="hover:underline hover:text-grayish-purple"  href="https://github.com/FevenSeyfu">Feven Seyfu</a>.</p>
-  </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
