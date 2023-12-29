@@ -1,7 +1,10 @@
 import './style.css'
 
+const FaqContainer = document.getElementById('faq')
 const toggleButtons= document.querySelectorAll('#plus-minus-icon')
 
+FaqContainer.focus()
+console.log(FaqContainer)
 const HandleToggleIcon = (toggleIcon) => {
     let initilaIcon = toggleIcon.src ;
     let testIcon = initilaIcon.includes('icon-plus.svg')
