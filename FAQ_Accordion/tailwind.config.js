@@ -14,6 +14,11 @@ export default {
         'dark-purple': 'hsl(292, 42%, 14%)',
       },
     },
+    screens: {
+      'sm': '375px',
+      'md': '768px',
+      'lg': '1440px',
+    },
   },
   plugins: [],
 }
