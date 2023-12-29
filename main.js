@@ -1,5 +1,3 @@
-import './style.css'
-
 const FaqContainer = document.getElementById('faq')
 const toggleButtons= document.querySelectorAll('#plus-minus-icon')
 
