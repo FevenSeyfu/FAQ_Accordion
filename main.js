@@ -1,7 +1,5 @@
-const FaqContainer = document.getElementById('faq')
-const toggleButtons= document.querySelectorAll('#plus-minus-icon')
+const toggleButtons= document.querySelectorAll('.plus-minus-icon')
 
-FaqContainer.focus()
 const getIconPath = (imageName) => {
     const scriptTag = document.querySelector('script[src*="main.js"]');
     const scriptPath = scriptTag.src;
