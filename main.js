@@ -23,7 +23,7 @@ toggleButtons.forEach(toggleButton => {
         faqAnswer.classList.toggle('hidden')
         // find and change toggleicon 
         const toggleIcon = toggleButton.getElementsByTagName('img')[0]
-        toggleIcon.src=HandleToggleIcon(toggleIcon)
+        toggleIcon.src=handleToggleIcon(toggleIcon)
     })
    
 });
