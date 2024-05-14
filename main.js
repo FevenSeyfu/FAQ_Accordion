@@ -1,5 +1,7 @@
 
+import data from './data.json'
 const getIconPath = (imageName) => {
+  console.log(data)
   const basePath = "./assets/images";
   return `${basePath}/${imageName}`;
 };
@@ -11,7 +13,7 @@ const handleToggleIcon = (toggleIcon) => {
   return newImg;
 };
 
-fetch("./assets/data.json")
+fetch("./data.json")
   .then((response) => response.json())
   .then((data) => {
     const faqContainer = document.getElementById("faq_container");
