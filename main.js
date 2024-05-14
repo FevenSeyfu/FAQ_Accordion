@@ -1,3 +1,4 @@
+
 const getIconPath = (imageName) => {
   const basePath = "./assets/images";
   return `${basePath}/${imageName}`;
@@ -21,22 +22,20 @@ fetch("./assets/data.json")
       const hr = index !== data.length - 1 ? "<hr />" : "";
 
       const faqList = `
-                <div class="faq my-2">
-                    <div class="flex items-center mb-4">
-                        <h2 class="font-bold text-md w-11/12 hover:text-grayish-purple">${
-                          faq.question
-                        }</h2>
-                        <button class="plus-minus-icon">
-                            <img src="${getIconPath(
-                              icon
-                            )}" alt="Faq toggle icon" />
-                        </button>
-                    </div>
-                    <p class="text-[16px] text-grayish-purple my-4 ${isOpen}">${
-        faq.answer
-      }</p>
-                    ${hr}
-                </div>
+              <div class="faq my-2">
+                  <div class="flex items-center mb-4">
+                      <h2 class="font-bold text-md w-11/12 hover:text-purple-900">${
+                        faq.question
+                      }</h2>
+                      <button class="plus-minus-icon">
+                          <img src="${getIconPath(
+                            icon
+                          )}" alt="Faq toggle icon" />
+                      </button>
+                  </div>
+                  <p class="text-[16px] text-grayish-purple my-4 ${isOpen}">${ faq.answer }</p>
+                  ${hr}
+              </div>
             `;
 
       faqContainer.innerHTML += faqList;
