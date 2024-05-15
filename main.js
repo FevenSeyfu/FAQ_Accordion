@@ -15,7 +15,7 @@ const handleToggleIcon = (toggleIcon) => {
   return newImg;
 };
 
-const faqContainer = document.getElementById("faq_container");
+const faqLists = document.getElementById("faqLists");
 
 data.forEach((faq, index) => {
   const isOpen = index === 0 ? "" : "hidden";
