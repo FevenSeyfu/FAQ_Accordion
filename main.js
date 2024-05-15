@@ -1,7 +1,6 @@
 import data from "./data.json";
-import plusIcon from './assets/images/icon-plus.svg';
-import minusIcon from './assets/images/icon-minus.svg';
-
+import plusIcon from "./assets/images/icon-plus.svg";
+import minusIcon from "./assets/images/icon-minus.svg";
 
 const getIconPath = (imageName) => {
   const basePath = "./assets/images";
@@ -11,7 +10,7 @@ const getIconPath = (imageName) => {
 const handleToggleIcon = (toggleIcon) => {
   const initialIcon = toggleIcon.src;
   const testIcon = initialIcon.includes("icon-plus.svg");
-  const newImg = testIcon ? minusIcon: plusIcon;
+  const newImg = testIcon ? minusIcon : plusIcon;
   return newImg;
 };
 
@@ -25,23 +24,17 @@ data.forEach((faq, index) => {
   const faqList = `
               <div class="faq my-2">
                   <div class="flex items-center mb-4">
-                      <h2 class="font-bold text-md w-11/12 hover:text-purple-900">${
-                        faq.question
-                      }</h2>
+                      <h2 class="font-bold text-md w-11/12 hover:text-purple-900">${faq.question}</h2>
                       <button class="plus-minus-icon">
-                          <img src="${
-                            icon
-                          }" alt="Faq toggle icon" />
+                          <img src="${icon}" alt="Faq toggle icon" />
                       </button>
                   </div>
-                  <p class="text-[16px] text-grayish-purple my-4 ${isOpen}">${
-    faq.answer
-  }</p>
+                  <p class="text-[16px] text-grayish-purple my-4 ${isOpen}">${faq.answer}</p>
                   ${hr}
               </div>
             `;
 
-  faqContainer.innerHTML += faqList;
+  faqLists.innerHTML += faqList;
 });
 
 const toggleButtons = document.querySelectorAll(".plus-minus-icon");
